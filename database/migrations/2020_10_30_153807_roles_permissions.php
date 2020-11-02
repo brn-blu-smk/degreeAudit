@@ -13,7 +13,12 @@ class RolesPermissions extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('roles_permissions', function (Blueprint $table)
+        {
+        $table->id();
+
+        $table->timestamps();
+    }
     }
 
     /**

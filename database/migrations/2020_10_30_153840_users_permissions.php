@@ -13,7 +13,12 @@ class UsersPermissions extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('users_permissions', function (Blueprint $table)
+        {
+        $table->id();
+            
+        $table->timestamps();
+        }
     }
 
     /**
