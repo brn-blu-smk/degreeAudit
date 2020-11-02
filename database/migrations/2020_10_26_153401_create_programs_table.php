@@ -19,6 +19,7 @@ class CreateProgramsTable extends Migration
             $table->string("Class_Code");
             $table->string("Freindly_Name");
             $table->string("Major");
+            $table->timestamps();
         });
     }
 

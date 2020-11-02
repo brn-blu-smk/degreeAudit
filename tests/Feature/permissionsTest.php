@@ -21,9 +21,9 @@ class permissionsTest extends TestCase
         $response->assertStatus(200);
     }
     public function testRowsPermissonsTable(){
-        $user = \App\Models\permissions::create(['Permissons'=>'Student','User_ID'=>001]);
+        $user = \App\Models\permissions::create(['Permissions'=>'Student','User_ID'=>001]);
 
 
-        $this->assertDatabaseHas('permissons', ['Permissons'=>'Student','User_ID'=>001]);
+        $this->assertDatabaseHas('permissions', ['Permissions'=>'Student','User_ID'=>001]);
     }
 }
